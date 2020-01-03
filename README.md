@@ -17,3 +17,20 @@ curl -O https://raw.githubusercontent.com/jacklunee/trojan/master/trojan_mult.sh
 
 
 如果你的同一个域名申请了很多此证书，这个处理方法可能有用：更换二级域名，例如原来使用的域名是www.abc.com或abc.com或xyz.abc.com，那么现在你添加一个二级域名解析例如xxx.abc.com，安装时使用这个域名即可。
+#
+电脑上其他软件如何使用Trojan
+1、如果软件支持配置socks5，直接指向127.0.0.1：1080即可。
+
+2、如果软件不支持配置socks5，可选择sstap/sockscap64/supercap等软件，曲线实现代理。
+
+3、trojan服务端怎么修改密码
+
+trojan服务端配置文件路径如下，如需修改内容，修改以下文件即可。
+#
+/usr/src/trojan/server.conf
+#
+修改完成后，重启trojan服务端即可，同时客户端的密码也要同步修改哦。
+#
+安装完成后，会展示一条下载地址，复制地址，并下载下来即可。
+
+如果你真的忘记下载了，那么进入/usr/share/nginx/html/目录下，找到一个乱码文件夹，进入会看到客户端文件，使用sftp下载下来即可。
