@@ -34,3 +34,9 @@ trojan服务端配置文件路径如下，如需修改内容，修改以下文�
 安装完成后，会展示一条下载地址，复制地址，并下载下来即可。
 
 如果你真的忘记下载了，那么进入/usr/share/nginx/html/目录下，找到一个乱码文件夹，进入会看到客户端文件，使用sftp下载下来即可。
+#
+DO主机如果出现登录后不能显示页面解决办法
+1、用代理应急
+2、修改hosts文件
+DO用的ccs的CDN中转服务是fastly公司的，解析时会被墙！用ping工具找出IP地址
+hosts里面加入 151.101.1.194  cloud-cdn-digitalocean-com.global.ssl.fastly.net
