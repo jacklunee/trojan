@@ -31,6 +31,8 @@ trojan服务端配置文件路径如下，如需修改内容，修改以下文�
 #
 修改完成后，重启trojan服务端即可，同时客户端的密码也要同步修改哦。
 #
+重启代码 systemctl restart trojan
+#
 安装完成后，会展示一条下载地址，复制地址，并下载下来即可。
 
 如果你真的忘记下载了，那么进入/usr/share/nginx/html/目录下，找到一个乱码文件夹，进入会看到客户端文件，使用sftp下载下来即可。
@@ -45,3 +47,6 @@ hosts里面加入 151.101.1.194  cloud-cdn-digitalocean-com.global.ssl.fastly.ne
 怎么找出网站被墙的部分？
 1、用chrome浏览器右键——检查——console找出加载失败的CSS和JS等等
 2、ping出该网址被墙的真实IP（选择海外的），如果IP能ping得通，证明IP可用修改hosts文件即可
+#
+自动配置伪装网站，位于/usr/share/nginx/html/目录下，可自行替换其中内容
+
