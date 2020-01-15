@@ -1,3 +1,5 @@
+#
+首先要感谢atrandys大神提供的一键安装脚本！
 # 
 最简单的Trojan一键脚本，效率高/速度快/延迟低，支持tls1.3，系统支持centos7+/debian9+/ubuntu16+
 #
