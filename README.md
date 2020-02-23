@@ -30,6 +30,7 @@ curl -O https://raw.githubusercontent.com/jacklunee/trojan/master/trojan_mult.sh
 trojan服务端配置文件路径如下，如需修改内容，修改以下文件即可。
 #
 /usr/src/trojan/server.conf
+查看密码 vi /usr/src/trojan/server.conf
 #
 修改完成后，重启trojan服务端即可，同时客户端的密码也要同步修改哦。
 #
